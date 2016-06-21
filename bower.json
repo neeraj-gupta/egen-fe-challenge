@@ -1,0 +1,34 @@
+{
+  "name": "egen-fe-challenge",
+  "description": "Code Challenge Egen - Front End Test for Angular  Application",
+  "main": "index.js",
+  "authors": [
+    "Neeraj Gupta"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Angular",
+    "Egen",
+    "Coding",
+    "Challenge"
+  ],
+  "homepage": "https://github.com/neeraj-gupta/egen-fe-challenge",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "jquery": "^3.0.0",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}
