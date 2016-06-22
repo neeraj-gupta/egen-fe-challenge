@@ -1,20 +1,18 @@
 <div layout="row" layout-xs="column" class="content-header">
     <h1 flex>Users</h1>
     <div class="right-btn" flex>
-        <md-button class="md-raised"><i class="fa fa-plus color-orange" aria-hidden="true"></i>Add User</md-button>
+        <md-button class="md-raised" ng-click="userListVm.goToAddUser()"><i class="fa fa-plus color-orange" aria-hidden="true"></i>Add User</md-button>
     </div>
 </div>
 
 <div class="list-container">
-    <ul>
-        <li layout="row" layout-xs="column" class="list-header">
-            <div flex="5"></div>
+        <div layout="row" layout-xs="column" class="list-header">
+            <div flex="10"></div>
             <div flex>NAME</div>
             <div flex>EMAIL</div>
             <div flex>CITY</div>
             <div flex>COMPANY</div>
-        </li>
-    </ul>
+        </div>
     <md-divider></md-divider>
     <md-divider></md-divider>
     <md-content>

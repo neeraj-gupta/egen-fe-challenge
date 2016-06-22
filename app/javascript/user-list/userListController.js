@@ -16,4 +16,8 @@ function UserListController(userListProvider, $state) {
   userListVM.getUser = function(id) {
     $state.go('user-profile', {data: id});
   }
+  userListVM.goToAddUser = function() {
+    $state.go('create-user');
+  }
 }
+

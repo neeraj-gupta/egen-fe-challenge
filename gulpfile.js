@@ -37,11 +37,11 @@ gulp.task('connect', function () {
 
 // default task
 gulp.task('default',
-    ['lint', 'connect']
+    []
 );
 gulp.task('build', function() {
     runSequence(
         ['clean'],
-        ['lint', 'minify-css', 'minify-js', 'copy-html-files', 'copy-bower-components', 'connectDist']
+        ['lint', 'minify-css', 'minify-js']
     );
 });

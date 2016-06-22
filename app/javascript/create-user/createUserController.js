@@ -11,6 +11,11 @@ function CreateUserController($state, createUserService) {
   var createUserVM = this;
 
   createUserVM.addUser = addUser;
+  createUserVM.toggleBack = toggleBack;
+
+  function toggleBack() {
+    $state.go('user-list');
+  };
 
   function addUser() {
     var user = {

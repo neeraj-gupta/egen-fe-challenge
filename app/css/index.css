@@ -16,7 +16,7 @@
 .menu-bar {
     position: absolute;
     right: 15px;
-    top: 10px;
+    top: 20px;
 }
 .main-container {
     position: absolute;
@@ -78,7 +78,9 @@ button {
 ul {
     list-style-type: none;
 }
-
+md-content{
+    overflow: visible!important;
+}
 md-divider{
     background-color: #ff6600!important;
 }
