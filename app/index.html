@@ -9,7 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="og:keywords" content="angular, responsive, bootstrap" />
         <meta name="fragment" content="!" />
+
         <title>Egen - Angular App</title>
+
         <link href="css/index.css" rel="stylesheet" />
         <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css' />
@@ -20,7 +22,7 @@
         <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
                 <a class="navbar-brand" ui-sref="user-list">
-                    <img src="https://egen.solutions/images/egen-logo.png">
+                    <img class="logo" src="https://egen.solutions/images/egen-logo.png">
                 </a>
             </div>
             <div class="navbar-right">
@@ -29,10 +31,12 @@
         </nav>
         <!-- Main Content -->
         <div class="container">
-            <div ui-view></div>
+            <ui-view></ui-view>
+            <script src="/bower_components/jquery/dist/jquery.js"></script>
             <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
             <script src="/bower_components/angular/angular.min.js"></script>
             <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+            <script src="index.js" type="javascript"></script>
         </div>
     </body>
 </html>

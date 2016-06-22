@@ -4,7 +4,14 @@
   "description": "Code Challenge Egen - Front End Test for Angular  Application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "bower install",
+
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 3000 -c-1 ./app",
+
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -22,8 +29,9 @@
     "url": "https://github.com/neeraj-gupta/egen-fe-challenge/issues"
   },
   "homepage": "https://github.com/neeraj-gupta/egen-fe-challenge#readme",
-  "dependencies": {
+  "devDependencies": {
     "bower": "^1.7.9",
+    "http-server": "^0.9.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-connect": "^4.1.0",
