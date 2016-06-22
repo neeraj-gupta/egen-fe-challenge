@@ -1,3 +1,13 @@
-<div>
-
+<div layout="row" layout-xs="column" class="content-header">
+    <h1 flex>User Details</h1>
+    <div class="right-btn" flex>
+        <md-button class="md-raised"><i class="fa-angle-left color-orange" aria-hidden="true"></i>Back</md-button>
+    </div>
+</div>
+<div class="list-container">
+    <div>
+        Hello,
+        {{profileVm.userProfile.firstName}}
+        <button ng-click="profileVm.deleteUser();">Delete User</button>
+    </div>
 </div>

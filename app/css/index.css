@@ -1,4 +1,91 @@
+.nav-custom {
+    min-height: 70px !important;
+    border-radius: 0px!important;
+    margin: 0 !important;
+    box-shadow: 0 5px 5px #888888;
+    background-color: white !important;
+}
+.navbar {
+    box-shadow: 0 8px 6px -6px #999;
+}
 .logo{
+    position: relative;
     height: 50px;
     width: 50px;
+}
+.menu-bar {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.main-container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+}
+.content-header{
+    position: relative;
+    width: 96%;
+    height: 10%;
+    margin: 0 2%;
+}
+
+h1{
+    margin-left: 15px;
+}
+
+button {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    top: 0px;
+    background: none;
+    border-radius: 5px;
+}
+.right-btn { right:0;}
+.md-button {
+    color: #ff6600!important;
+    float: right;
+    top: 10px;
+}
+.color-orange {
+    color: #ff6600;
+    font-size: 25px;
+    font-weight: 700;
+    transition: 0.08s ease-in;
+    margin-right: 10px;
+}
+
+.md-button:hover {
+    background: #ff6614;
+    color: whitesmoke;
+}
+
+/* Users List Container */
+.list-container{
+    position: relative;
+    min-height: 600px;
+    width: 96%;
+    margin: 0 2%;
+    box-shadow: 0 2px 5px #888;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+md-divider{
+    background-color: #ff6600!important;
+}
+
+.list-header{
+    color: #ff6600;
+    height: 50px;
+}
+.list-header div {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 50px;
 }

@@ -1,3 +1,23 @@
 <div>
+    <form name="form" ng-submit="createUserVm.addUser()">
+        First Name
+        <input type="text" ng-model="createUserVm.firstName" placeholder="First Name" required>
 
+        Last Name
+        <input type="text" ng-model="createUserVm.lastName" placeholder="Last Name" required>
+
+        Email
+        <input type="email" ng-model="createUserVm.email" placeholder="Email" required>
+
+        Street Address
+        <input type="text" ng-model="createUserVm.street" placeholder="Street Address" required>
+
+        City
+        <input type="text" ng-model="createUserVm.city" placeholder="City" required>
+
+        Company
+        <input type="text" ng-model="createUserVm.company" placeholder="Company" required>
+
+        <input type="submit" id="submit" value="Add" />
+    </form>
 </div>

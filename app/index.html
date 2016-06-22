@@ -16,30 +16,45 @@
         <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css"/>
     </head>
     <body ng-app="myTestApp">
         <!-- NAVIGATION -->
-        <nav class="navbar navbar-inverse" role="navigation">
+
+        <nav class="navbar navbar-default nav-custom" role="navigation">
             <div class="navbar-header">
                 <a class="navbar-brand" ui-sref="user-list">
                     <img class="logo" src="https://egen.solutions/images/egen-logo.png">
                 </a>
             </div>
-            <div class="navbar-right">
+            <div class="menu-bar">
                 <!-- add icon for menu here. -->
+                <i class="fa fa-bars fa-2x color-orange" aria-hidden="true"></i>
             </div>
         </nav>
         <!-- Main Content -->
-        <div class="container">
+        <div class="main-container">
             <div ui-view></div>
         </div>
 
         <!--<script src="/bower_components/angular/angular.min.js"></script>-->
         <!--<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>-->
+        <!--<script src="/bower_components/jquery/dist/jquery.js"></script>-->
+        <!--<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
-        <script src="/bower_components/jquery/dist/jquery.js"></script>
-        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+        <script src="bower_components/angular-material/angular-material.min.js"></script>
+
         <script src="index.js" type="text/javascript"></script>
+        <script src="javascript/user-list/userListController.js"></script>
+        <script src="javascript/user-list/userListService.js"></script>
+        <script src="javascript/user-profile/profileController.js"></script>
+        <script src="javascript/user-profile/profileService.js"></script>
+
+        <script src="javascript/create-user/createUserController.js"></script>
+        <script src="javascript/create-user/createUserService.js"></script>
     </body>
 </html>
