@@ -1,45 +1,43 @@
 /**
  * Created by Neeraj on 6/21/2016.
  */
-(function(){
-    'use strict';
 
-    angular
-        .module('myApp')
-        .config(configure);
+'use strict';
 
-    configure.$inject = ['$stateProvider', '$urlRouterProvider'];
+angular
+    .module('myTestApp', ['ui.router'])
+    .config(configure);
 
-    function configure($stateProvider, $urlRouterProvider){
+configure.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-        $stateProvider.state('user-list', {
-            url : '/user-list',
-            templateUrl : 'views/partial-user-list.html',
-            controller : 'userController',
-            controllerAs : 'userVm'
-        });
+function configure($stateProvider, $urlRouterProvider){
 
-        $stateProvider.state('user', {
-            url : '/user',
-            templateUrl : 'views/partial-user.html',
-            controller : 'userController',
-            controllerAs : 'userVm'
-        });
+    $stateProvider.state('user-list', {
+        url : '/user-list',
+        templateUrl : 'views/partial-user-list.html'
+    });
 
-        $stateProvider.state('create-user', {
-            url : '/create',
-            templateUrl : 'views/partial-create-user.html',
-            controller : 'userController',
-            controllerAs : 'userVm'
-        });
+    $stateProvider.state('user', {
+        url : '/user',
+        templateUrl : 'views/partial-user.html',
+        controller : 'userController',
+        controllerAs : 'userVm'
+    });
 
-        $stateProvider.state('menu-drawer', {
-            url : '/menu',
-            templateUrl : 'views/partial-menu-drawer.html',
-            controller : 'menuController',
-            controllerAs : 'menuVm'
-        });
+    $stateProvider.state('create-user', {
+        url : '/create',
+        templateUrl : 'views/partial-create-user.html',
+        controller : 'userController',
+        controllerAs : 'userVm'
+    });
 
-        $urlRouterProvider.otherwise('user-list');
-    }
-})();
+    $stateProvider.state('menu-drawer', {
+        url : '/menu',
+        templateUrl : 'views/partial-menu-drawer.html',
+        controller : 'menuController',
+        controllerAs : 'menuVm'
+    });
+
+    $urlRouterProvider.otherwise('user-list');
+}
+
