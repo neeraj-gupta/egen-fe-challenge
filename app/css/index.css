@@ -49,6 +49,9 @@ button {
     float: right;
     top: 10px;
 }
+.left{
+    float: left;
+}
 .color-orange {
     color: #ff6600;
     font-size: 25px;
@@ -88,4 +91,55 @@ md-divider{
     font-size: 25px;
     font-weight: 700;
     line-height: 50px;
+}
+.left-panel{
+    padding: 2%;
+}
+.left-panel div{
+    font-size: 25px;
+    color: #ff6600;
+    margin-top: 3%;
+}
+.left-panel span{
+    font-size: 20px;
+}
+.profilePic {
+    box-shadow: 0 2px 5px #888;
+    border: solid 2px #ff6600;
+    overflow: hidden;
+}
+.profilePic img{
+    height: 100%;
+    width: auto;
+}
+.drawer{
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+.drawer-head{
+    color: #ff6600;
+    text-align: center;
+}
+.drawer md-divider{
+    background-color: white!important;
+}
+.drawer .drawer-item{
+    color: white!important;
+}
+
+.create-user div {
+    color: #ff6600;
+    font-size: 25px;
+}
+.create-user input[type=text], input[type=email]{
+    width: 100%;
+    color: black;
+}
+
+.create-user input[type=submit]{
+    border-radius: 5px;
+    color:white;
+    margin-left: 10px;
+    background-color: #ff6600;
 }

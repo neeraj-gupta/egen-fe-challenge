@@ -5,9 +5,22 @@
     </div>
 </div>
 <div class="list-container">
-    <div>
-        Hello,
-        {{profileVm.userProfile.firstName}}
-        <button ng-click="profileVm.deleteUser();">Delete User</button>
+    <div layout="row" layout-margin layout-xs="column">
+        <div class="left-panel" flex>
+            <div flex>Name</div>
+            <span>{{profileVm.userProfile.firstName}} {{profileVm.userProfile.lastName}}</span>
+            <div flex>Email</div>
+            <span>{{profileVm.userProfile.email}}</span>
+            <div flex>Address</div>
+            <span>{{profileVm.userProfile.address.street}} {{profileVm.userProfile.address.city}}</span>
+            <div flex>Company</div>
+            <span>{{profileVm.userProfile.company.name}}</span>
+            <div flex>
+                <md-button class="left md-raised" flex ng-click="profileVm.deleteUser();">Delete User</md-button>
+            </div>
+        </div>
+        <div class="profilePic" flex>
+            <img ng-src="{{profileVm.userProfile.profilePic}}">
+        </div>
     </div>
 </div>

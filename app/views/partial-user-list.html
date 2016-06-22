@@ -20,18 +20,18 @@
     <md-content>
         <md-list ng-repeat="user in userListVm.usersList">
             <md-list-item class="md-2-line" ng-click="userListVm.getUser(user.id)">
-                <img ng-src="{{user.face}}?{{$index}}" class="md-avatar" alt="{{user.who}}" flex="5">
+                <img ng-src="{{user.profilePic}}" class="md-avatar" alt="{{user.who}}" flex="5">
                 <div class="md-list-item-text" flex>
                     {{user.firstName}} {{user.lastName}}
                 </div>
                 <div class="md-list-item-text" flex>
-                    {{user.firstName}} {{user.lastName}}
+                    {{user.email}}
                 </div>
                 <div class="md-list-item-text" flex>
-                    {{user.firstName}} {{user.lastName}}
+                    {{user.address.city}}
                 </div>
                 <div class="md-list-item-text" flex>
-                    {{user.firstName}} {{user.lastName}}
+                    {{user.company.name}}
                 </div>
                 <md-divider></md-divider>
             </md-list-item>

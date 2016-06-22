@@ -40,6 +40,13 @@ function configure($stateProvider, $urlRouterProvider){
         controllerAs : 'createUserVm'
     });
 
+    $stateProvider.state('index', {
+        url : '/index',
+        templateUrl : 'index.html',
+        controller : 'indexController',
+        controllerAs : 'indexVm'
+    });
+
     $stateProvider.state('menu-drawer', {
         url : '/menu',
         templateUrl : 'views/partial-menu-drawer.html',

@@ -24,7 +24,8 @@ function CreateUserController($state, createUserService) {
       },
 
       company: {
-        name: ''
+        name: '',
+        website: ''
       }
     };
 
@@ -34,6 +35,7 @@ function CreateUserController($state, createUserService) {
     user.address.street = createUserVM.street;
     user.address.city = createUserVM.city;
     user.company.name = createUserVM.company;
+    user.company.website = createUserVM.website;
 
     createUserService.addUser(user).then(function(response) {
       if(response.status === 200) {

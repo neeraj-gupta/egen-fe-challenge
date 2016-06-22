@@ -1,23 +1,53 @@
-<div>
+<div layout="row" layout-xs="column" class="content-header">
+    <h1 flex>Add User</h1>
+    <div class="right-btn" flex>
+        <md-button class="md-raised"><i class="fa-angle-left color-orange" aria-hidden="true"></i>Back</md-button>
+    </div>
+</div>
+<div class="list-container">
     <form name="form" ng-submit="createUserVm.addUser()">
-        First Name
-        <input type="text" ng-model="createUserVm.firstName" placeholder="First Name" required>
-
-        Last Name
-        <input type="text" ng-model="createUserVm.lastName" placeholder="Last Name" required>
-
-        Email
-        <input type="email" ng-model="createUserVm.email" placeholder="Email" required>
-
-        Street Address
-        <input type="text" ng-model="createUserVm.street" placeholder="Street Address" required>
-
-        City
-        <input type="text" ng-model="createUserVm.city" placeholder="City" required>
-
-        Company
-        <input type="text" ng-model="createUserVm.company" placeholder="Company" required>
-
-        <input type="submit" id="submit" value="Add" />
+        <div class="create-user" layout-padding>
+            <div layout="row" layout-padding layout-xs="column">
+                <div flex>
+                    <div>First Name</div>
+                    <input type="text" ng-model="createUserVm.firstName" placeholder="First Name" required>
+                </div>
+                <div flex>
+                    <div>Last Name</div>
+                    <input type="text" ng-model="createUserVm.lastName" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div layout="row" layout-padding layout-xs="column">
+                <div flex>
+                    <div>Email</div>
+                    <input type="email" ng-model="createUserVm.email" placeholder="Email" required>
+                </div>
+            </div>
+            <div layout="row" layout-padding layout-xs="column">
+                <div flex>
+                    <div>Street Address</div>
+                    <input type="text" ng-model="createUserVm.street" placeholder="Street Address" required>
+                </div>
+                <div flex>
+                    <div>City</div>
+                    <input type="text" ng-model="createUserVm.city" placeholder="City" required>
+                </div>
+            </div>
+            <div layout="row" layout-padding layout-xs="column">
+                <div flex>
+                    <div>Company</div>
+                    <input type="text" ng-model="createUserVm.company" placeholder="Company" required>
+                </div>
+                <div flex>
+                    <div>Website</div>
+                    <input type="text" ng-model="createUserVm.website" placeholder="Website" required>
+                </div>
+            </div>
+            <div layout="row" layout-pading>
+                <div flex>
+                    <input type="submit" id="submit" value="Add" />
+                </div>
+            </div>
+        </div>
     </form>
 </div>
